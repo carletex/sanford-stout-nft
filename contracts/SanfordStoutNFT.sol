@@ -5,8 +5,6 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 
-//import "hardhat/console.sol";
-
 contract SanfordStoutNFT is ERC721, Ownable {
     using Counters for Counters.Counter;
     Counters.Counter public tokenIdCounter;
@@ -17,7 +15,7 @@ contract SanfordStoutNFT is ERC721, Ownable {
     constructor() ERC721("Sanford Stout NFT", "SSN") {}
 
     function _baseURI() internal pure virtual override returns (string memory) {
-        return "";
+        return "ipfs://bafybeicce4ku2pode3f5keremouq3t4nmhrqh3yg6ptzjbkntb357z4jry/";
     }
 
     function mint() external payable {

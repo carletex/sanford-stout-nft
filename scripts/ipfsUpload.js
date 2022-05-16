@@ -15,7 +15,7 @@ async function main() {
 
     for (let i=1; i <= nftSupply; i++) {
         const metadata = {
-            name: `Sandford Stout NFT pass ${i}`,
+            name: `Sandford Stout - Access Pass ${i}`,
             image: imageCid,
             description: "Unlock access to the Sanford Stout Community"
         }
